@@ -9,7 +9,7 @@ _G.AutoStamina = false
 function AutoStamina()
     task.spawn(function()
         while _G.AutoStamina do
-            for _ = 1, 5 do
+            for _ = 1, 1 do
                 ReplicatedStorage.AddStaminaEvent:FireServer()
                 ReplicatedStorage.AddStaminaEvent:FireServer()
                 ReplicatedStorage.AddStaminaEvent:FireServer()
