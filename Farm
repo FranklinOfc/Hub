@@ -36,11 +36,11 @@ local HubExclusivoTab = Window:MakeTab({
 HubExclusivoTab:AddSection({ Name = "Auto-Farm" })
 
 HubExclusivoTab:AddToggle({
-    Name = "Auto1",
+    Name = "AutoStamina",
     Default = false,
     Callback = function(Value)
-        _G.Auto1 = Value
-        if Value then Auto1() end
+        _G.AutoStamina = Value
+        if Value then AutoStamina() end
     end
 })
 HubExclusivoTab:AddButton({
