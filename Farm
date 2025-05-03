@@ -1,7 +1,6 @@
 -- Load Orion Library
 local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/hakaiofc/Base/main/HUBORION'))()
 
--- Referência ao ReplicatedStorage
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 _G.AutoStamina = false
@@ -29,7 +28,6 @@ local Window = OrionLib:MakeWindow({
     IntroEnabled = false
 })
 
--- Aba principal
 local HubExclusivoTab = Window:MakeTab({
     Name = "Menu 1",
     Icon = "rbxassetid://4483345998",
