@@ -58,4 +58,5 @@ AdicionaisTab:AddButton({
     Name = "InfiniteYield",
     Callback = function()
     end
+loadstring(game:HttpGet('https://raw.githubusercontent.com/hakaiofc/EdgeIYinfiniteyield/main/mastersource'))()
 })
