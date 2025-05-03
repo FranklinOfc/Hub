@@ -16,7 +16,6 @@ function AutoStamina()
         
         end
     end)
-SCRIPT
 end
 -- Criando Interface
 local Window = OrionLib:MakeWindow({
@@ -46,7 +45,6 @@ HubExclusivoTab:AddToggle({
 HubExclusivoTab:AddButton({
     Name = "NOME",
     Callback = function()
-SCRIPT
 })
 
 local AdicionaisTab = Window:MakeTab({
@@ -60,6 +58,5 @@ AdicionaisTab:AddSection({ Name = "FUNÇÕES ADICIONAIS" })
 AdicionaisTab:AddButton({
     Name = "InfiniteYield",
     Callback = function()
-SCRIPT
     end
 })
