@@ -1,6 +1,15 @@
 -- Load Orion Library
 local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/hakaiofc/Base/main/HUBORION'))()
 
+-- ANTI AFK
+pcall(function()
+    local VirtualUser = game:service("VirtualUser")
+    game:service("Players").LocalPlayer.Idled:Connect(function()
+        VirtualUser:CaptureController()
+        VirtualUser:ClickButton2(Vector2.new())
+    end)
+end)
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 _G.AutoStamina = false
