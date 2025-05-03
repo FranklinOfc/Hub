@@ -1,15 +1,26 @@
 -- Load Orion Library
 local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/hakaiofc/Base/main/HUBORION'))()
 
-_G.Auto1 = false
+_G.AutoStamina = false
 
---Auto1
-function Auto1()
+--AutoStamina
+function AutoStamina()
+    task.spawn(function()
+        while _G.AutoStamina do
+            for _ = 1, 5 do
+                ReplicatedStorage.AddStaminaEvent:FireServer()
+                ReplicatedStorage.AddStaminaEvent:FireServer()
+                ReplicatedStorage.AddStaminaEvent:FireServer()
+            end
+            task.wait()
+        
+        end
+    end)
 SCRIPT
 end
 -- Criando Interface
 local Window = OrionLib:MakeWindow({
-    Name = "NOME DO HUB",
+    Name = "FarmeExclusive",
     HidePremium = false,
     SaveConfig = true,
     ConfigFolder = "OrionTest",
