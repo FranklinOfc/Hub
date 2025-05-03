@@ -1,0 +1,54 @@
+-- Load Orion Library
+local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/hakaiofc/Base/main/HUBORION'))()
+
+_G.Auto1 = false
+
+--Auto1
+function Auto1()
+SCRIPT
+end
+-- Criando Interface
+local Window = OrionLib:MakeWindow({
+    Name = "NOME DO HUB",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "OrionTest",
+    IntroEnabled = false
+})
+
+local HubExclusivoTab = Window:MakeTab({
+    Name = "Menu 1",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+HubExclusivoTab:AddSection({ Name = "Auto-Farm" })
+
+HubExclusivoTab:AddToggle({
+    Name = "Auto1",
+    Default = false,
+    Callback = function(Value)
+        _G.Auto1 = Value
+        if Value then Auto1() end
+    end
+})
+HubExclusivoTab:AddButton({
+    Name = "NOME",
+    Callback = function()
+SCRIPT
+})
+
+local AdicionaisTab = Window:MakeTab({
+    Name = "FUNÇÕES A+",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+AdicionaisTab:AddSection({ Name = "FUNÇÕES ADICIONAIS" })
+
+AdicionaisTab:AddButton({
+    Name = "InfiniteYield",
+    Callback = function()
+SCRIPT
+    end
+})
