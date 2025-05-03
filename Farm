@@ -13,7 +13,6 @@ function AutoStamina()
                 ReplicatedStorage.AddStaminaEvent:FireServer()
             end
             task.wait()
-        
         end
     end)
 end
